@@ -1,0 +1,55 @@
+{
+  "name": "Millie-MD",
+  "logo": "https://raw.githubusercontent.com/Neeraj-x0/Millie/main/Millie/millie.jpg",
+  "description": "WhatsApp Bot",
+  "repository": "https://github.com/Neeraj-x0/Millie-MD",
+  "keywords": ["bot","whatsapp","whatsapp-bot"],
+  "env": {
+ "SESSION_ID": {
+    "description": "The session ID you Recieved",
+    "required": true
+    },
+"AUTHOR": {
+    "description": "Author Of sticker",
+    "required": false
+},
+"PACKNAME": {
+  "description": "Packname Of sticker",
+  "required":false
+},
+"IMAGE": {
+  "description": "Global Image",
+  "required":false
+},
+"WATERMARK": {
+  "description": "Watermark For Buttons",
+  "required": true
+},
+"BOT_NAME": {
+  "description": "BOT NAME",
+  "required": true
+}
+
+},
+"buildpacks": [
+
+  {
+
+      "url": "heroku/nodejs"
+
+  },
+
+  {
+
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+
+  },
+
+  {
+
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+
+  }
+
+]
+}
