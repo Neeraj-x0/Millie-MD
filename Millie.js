@@ -79,15 +79,10 @@ global.isInit = !fs.existsSync(authFile)
 const { state, saveState } = useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
-  version: [2, 2204, 13],
+  version: [3,3234,9],
   logger: pino({ level: 'silent' }),
   printQRInTerminal: false,
-  auth: state,
-  getMessage: async key => {
-    return {
-      conversation: 'hello'
-    }
-  }
+  auth: state
 }
 
 global.conn = simple.makeWASocket(connectionOptions)
