@@ -70,6 +70,7 @@
         "node-webpmux": "^3.1.0",
         "nodemon": "^2.0.15",
         "pastebin-js": "^1.0.6",
+        "pino": "^7.11.0",
         "perf_hooks": "^0.0.1",
         "pet-pet-gif": "^1.0.9",
         "pg": "^8.7.3",
