@@ -9,6 +9,7 @@ const fs = require('fs')
 const yargs = require('yargs/yargs')
 const cp = require('child_process')
 const _ = require('lodash')
+const pino = require('pino')
 const syntaxerror = require('syntax-error')
 const os = require('os')
 let simple = require('./lib/simple')
@@ -79,6 +80,7 @@ const { state, saveState } = useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
   version: [2, 2204, 13],
+  logger: pino({ level: 'silent' }),
   printQRInTerminal: false,
   auth: state,
   getMessage: async key => {
