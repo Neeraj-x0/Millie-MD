@@ -10,8 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install 
-RUN npm install yt-search 
+RUN npm install
 
 COPY . .
 
