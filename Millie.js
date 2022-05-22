@@ -26,11 +26,9 @@ const { Low, JSONFile } = low
 const mongoDB = require('./lib/mongoDB')
 
 if(!fs.existsSync('./session.millie.json')){
-MakeSession(session,authFile)
+MakeSession(global.session,authFile)
 }
-console.log('Writing Session');
 
-console.log('Successfully Written Session');
 
 
 
