@@ -51,6 +51,7 @@ module.exports = {
         global.uptime = clockString(_uptime)
         global.sock = conn
         global.namabot = conn.user.name
+        global.urlRegex = /(((https?:\/\/)|(www\.))[^\s]+)/g;
 
         let ne = await (await fetch('https://raw.githubusercontent.com/ArugaZ/grabbed-results/main/random/anime/neko.txt')).text()
         let nek = ne.split('\n')
@@ -65,6 +66,123 @@ module.exports = {
         global.thumbt = pickRandom(global.tmbnld)
         global.thumbb = pickRandom(neko)
 
+//================VERIFICATIONS==================//
+        global.docverify =  {quoted:{
+            key : {fromMe: false,
+                   participant : '0@s.whatsapp.net'
+                                },
+               message: {
+                            documentMessage: {
+                            title: 'ᴍɪʟʟɪᴇ-ᴍᴅ', 
+                            jpegThumbnail: thumburl
+                                  }
+                                }
+                            }}
+
+        
+        global.gcverify = {quoted:{
+            "key": {
+                "fromMe": false,
+                "participant": "0@s.whatsapp.net",
+                "remoteJid": "0@s.whatsapp.net"
+            },
+            "message": {
+                "groupInviteMessage": {
+                    "groupJid": "120363040549014341@g.us",
+                    "inviteCode": "BcOf8vB5KAlFQhb3c5d06b",
+                    "groupName": "ᴍɪʟʟɪᴇ-ᴍᴅ", 
+                    "caption": "ɴᴇᴇʀᴀᴊ-x0", 
+                    'jpegThumbnail': thumburl
+                }
+            }
+                            }}   
+        
+        global.locverify = {quoted:{
+            key : {fromMe: false,
+                   participant : '0@s.whatsapp.net'
+                                },
+               message: {
+                            locationMessage: {
+                            name: 'ᴍɪʟʟɪᴇ-ᴍᴅ',
+                            jpegThumbnail: thumburl
+                                  }
+                                }
+                            }}
+
+        global.vidverify = {quoted:{
+            key: { 
+                 fromMe: false,
+                 participant: `0@s.whatsapp.net` 
+                       },
+            message: { 
+                        "videoMessage": { 
+                        "title":"ᴍɪʟʟɪᴇ-ᴍᴅ",
+                        "h": `ɴᴇᴇʀᴀᴊ-x0`,
+                        'seconds': '404', 
+                        'caption': 'ᴍɪʟʟɪᴇ-ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ',
+                        'jpegThumbnail': thumburl
+                               }
+                              }
+                            }} 
+                            
+        global.vnverify = {quoted:{
+            key: { 
+                 fromMe: false,
+                 participant: `0@s.whatsapp.net`
+                       },
+            message: { 
+               "audioMessage": {
+                        "mimetype":"audio/ogg; codecs=opus",
+                        "seconds": "404",
+                        "ptt": "true"
+                               }
+                             } 
+                            }}
+        
+        global.productverify ={quoted :  {
+            key:{
+                fromMe: false,
+                participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})
+            },
+            message: {
+                "productMessage": {
+                    "product": {
+                        "productImage":{
+                            "mimetype": "image/jpeg",
+                            "jpegThumbnail": thumburl
+                        },
+                        "title": "ᴍɪʟʟɪᴇ-ᴍᴅ",
+                        "description": "ɴᴇᴇʀᴀᴊ-x0",
+                        "currencyCode": "USD",
+                        "priceAmount1000": "404000000",
+                        "retailerId": "ᴍɪʟʟɪᴇ-ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
+                        "productImageCount": 404
+                    },
+                    "businessOwnerJid": `0@s.whatsapp.net`
+            }
+            }
+    }}
+       
+       global.troliverify = {quoted :
+        {
+            key : {
+                                  participant : '0@s.whatsapp.net'
+                                },
+               message: {
+                            orderMessage: {
+                                    itemCount : 404,
+                                    itemCoun : 404,
+                                    surface : 404,
+                                    message: 'ᴍɪʟʟɪᴇ-ᴍᴅ',
+                                    orderTitle: 'ɴᴇᴇʀᴀᴊ-x0B',
+                                    thumbnail: thumburl, 
+                                    sellerJid: '0@s.whatsapp.net'
+                  
+                                  }
+                                }
+                              }}
+
+                              
 
         let jax = 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
         let jbx = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
@@ -519,7 +637,7 @@ module.exports = {
                     }
                     m.isCommand = true
                     let xp = 'exp' in plugin ? parseInt(plugin.exp) : 17 // XP Earning per command
-                    if (xp > 200) m.reply('squeak -_-') // Hehehe
+                    if (xp > 200) conn.reply(m.chat,'squeak -_-') // Hehehe
                     else m.exp += xp
                     if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
                         let cap = `Your limit is up, please buy via ${usedPrefix}buy or ${usedPrefix}buyall Be a premium user so that your limit is unlimited, if interested please type ${usedPrefix}premium`
@@ -558,7 +676,7 @@ module.exports = {
                     try {
                         await plugin.call(this, m, extra)
                         if (!isPrems) m.limit = m.limit || plugin.limit || false
-                    } catch (e) {
+                      } catch (e) {
                         // Error occured
                         m.error = e
                         console.error(e)
@@ -567,10 +685,10 @@ module.exports = {
                             for (let key of Object.values(global.APIKeys))
                                 text = text.replace(new RegExp(key, 'g'), '#HIDDEN#')
                             let teks = await conn.trans(lang, text).catch(async _ => await conn.trans2(lang, text))
-                            m.reply(teks, m.chat)
+                            conn.reply(m.chat,teks, m.chat)
                         }
                     } finally {
-                        // m.reply(util.format(_user))
+                        // conn.reply(m.chat,util.format(_user))
                         if (typeof plugin.after === 'function') {
                             try {
                                 await plugin.after.call(this, m, extra)
@@ -580,7 +698,7 @@ module.exports = {
                         }
                         let lang = db.data.users[m.sender].language 
                         let lim = await this.trans(lang, 'Limit used').catch(async _ => await this.trans2(lang, 'Limit used'))
-                        if (m.limit) m.reply(+ m.limit + ' ' + lim)
+                        if (m.limit) conn.reply(m.chat,+ m.limit + ' ' + lim)
                     }
                     break
                 }
@@ -657,23 +775,10 @@ module.exports = {
  
                         } finally {
                             text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', description) :
-                                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', conn.getName(user))
+                                (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user',await conn.getName(user))
                                 img = thumburl
-                                this.sendTBI2(id, text, wm,img,"Source Code",git,`Menu`, `.menu`,action === 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'ɢᴏᴏᴅʙʏᴇ', wm, {                      
-                                    key: { fromMe: false, participant: `0@s.whatsapp.net`, remoteJid: 'status@broadcast' }, message: { contactMessage: { displayName: `${await this.getName(user)}`, vcard: `BEGIN: VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${user}\nitem1.TEL;waid=${user.split('@')[0]}:${user.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}},
-                                    {
-                                    
-                                     contextInfo: {
-                                     externalAdReply :{
-                                        mediaUrl: linkig,
-                                        mediaType: 2,
-                                        description: deslink, 
-                                        title: titlink + 'ツ',
-                                        body: bodlink,
-                                        thumbnail: await(await fetch(pp)).buffer(),
-                                        sourceUrl: ''
-                              }}
-                           })
+                                
+                                this.sendTBI2(id, text, wm,img,"Source Code",git,`Menu`, `.menu`,action === 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'ɢᴏᴏᴅʙʏᴇ', wm,{ mentions: [user]})
                            }
                    }
                }
