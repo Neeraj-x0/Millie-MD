@@ -59,6 +59,11 @@ global.name = 'Millie MULTI-DEVICE'
 global.session = process.env.SESSION_ID|| ''
 global.wm = process.env.WATERMARK|| 'ᴍɪʟʟɪᴇ-ᴍᴅ'
 global.owner_name = process.env.OWNER_NAME || 'Neeraj-x0'
+global.logsmsg = convertToBool(process.env.LOGS)|| false
+
+function convertToBool(text, fault = 'true') {
+  return text === fault ? true : false;
+}
 
 
 
