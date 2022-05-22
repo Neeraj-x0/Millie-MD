@@ -58,6 +58,7 @@ global.author = process.env.AUTHOR ||'ɴᴇᴇʀᴀᴊ-x0'
 global.name = 'Millie MULTI-DEVICE'
 global.session = process.env.SESSION_ID|| ''
 global.wm = process.env.WATERMARK|| 'ᴍɪʟʟɪᴇ-ᴍᴅ'
+global.owner_name = process.env.OWNER_NAME || 'Neeraj-x0'
 
 
 
