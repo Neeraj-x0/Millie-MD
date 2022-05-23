@@ -1,5 +1,9 @@
 FROM node:lts-buster
 
+RUN git clone https://github.com/Alien-alfa/WhatsAppBot-MD /root/Neerajx0
+
+WORKDIR /root/Neerajx0/
+
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
