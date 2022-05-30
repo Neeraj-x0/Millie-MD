@@ -1,7 +1,7 @@
 
 # *Millie Multi-Device*
 
-<div align="center">
+<div align="center"> 
   <img border-radius: 15px src="https://i.imgur.com/Pf1Wynm.png" width="200" height="200"/>
 
 
