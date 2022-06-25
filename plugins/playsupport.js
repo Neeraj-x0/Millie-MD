@@ -22,7 +22,7 @@ await conn.sendFile(m.chat, url, 0, {mimetype: 'audio/mpeg' ,fileName: `${title.
     mediaType: 2,
     description: deslink, 
     title: title,
-    body: `ᴍɪʟʟɪᴇ-ᴍᴅ`, // `${fileSizeH}`,
+    body: `𝚉𝙾𝙼𝙱𝙸𝙴`, // `${fileSizeH}`,
     thumbnail: await(await fetch(thumbnail)).buffer(), 
    }}
   }) 
@@ -41,7 +41,7 @@ await conn.sendFile(m.chat, url, 0, {mimetype: 'audio/mpeg' ,fileName: `${title.
     mediaType: 2,
     description: deslink, 
     title: title,
-    body: `ᴍɪʟʟɪᴇ-ᴍᴅ`, //`${fileSizeH}`,
+    body: `𝚉𝙾𝙼𝙱𝙸𝙴`, //`${fileSizeH}`,
     thumbnail: await(await fetch(thumbnail)).buffer(),
    }}
   }) 
@@ -60,7 +60,7 @@ await conn.sendFile(m.chat, url, 0, {mimetype: 'audio/mpeg' ,fileName: `${title.
     mediaType: 2,
     description: deslink, 
     title: title,
-    body: `ᴍɪʟʟɪᴇ-ᴍᴅ`, //`${fileSizeH}`,
+    body: `𝚉𝙾𝙼𝙱𝙸𝙴`, //`${fileSizeH}`,
     thumbnail: await(await fetch(thumbnail)).buffer(),
    }}
   }) 
@@ -76,7 +76,7 @@ await conn.sendFile(m.chat, url, 0, {mimetype: 'audio/mpeg' ,fileName: `${title.
     mediaType: 2,
     description: deslink, 
     title: title,
-    body: `ᴍɪʟʟɪᴇ-ᴍᴅ`, //`${filesizeF}`,
+    body: `𝚉𝙾𝙼𝙱𝙸𝙴`, //`${filesizeF}`,
     thumbnail: await(await fetch(thumb)).buffer(), 
    }}
   })
