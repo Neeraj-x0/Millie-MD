@@ -5,7 +5,7 @@ const os = require('os')
     let context = `
 ╔══════════════════════
 ║
-╠❐ 𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : 𝐌𝐢𝐥𝐥𝐢𝐞
+╠❐ 𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : 𝐙𝐎𝐌𝐁𝐈𝐄
 ║
 ╠❐ 𝐋𝐈𝐁𝐑𝐀𝐑𝐘   : 𝐁𝐚𝐢𝐥𝐞𝐲𝐬-𝐌𝐃
 ║
@@ -22,7 +22,7 @@ const os = require('os')
 ╠❐ 𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌: ${os.type()}
 ║
 ╚════════════════════════`
-await conn.sendTBI2(m.chat, context.trim(), wm,thumburl,`sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ `, `https://github.com/Neeraj-x0/Millie-MD`, null,null, `ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs`, `${ usedPrefix}lst`,m)
+await conn.sendTBI2(m.chat, context.trim(), wm,thumburl,`sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ `, `https://github.com/`, null,null, `ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs`, `${ usedPrefix}lst`,m)
 }
 handler.help = ['ᴍᴇɴᴜ']
 handler.tags = ['main']
