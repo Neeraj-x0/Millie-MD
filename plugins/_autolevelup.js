@@ -5,7 +5,7 @@ handler.before = async function (m) {
         let users = Object.entries(global.db.data.users).map(([key, value]) => {
                 return { ...value, jid: key }
         })
-        let pp = 'https://telegra.ph/file/5a7adde75e966077a7692.jpg'
+        let pp = 'https://telegra.ph/file/e891ab641d5d71c70d938.png'
         let who = m.sender
         let name = conn.getName(who)
         let discriminator = who.substring(9, 13)
