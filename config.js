@@ -19,7 +19,7 @@ global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium user
 
 global.devx = 'false'
 
-global.owner = ["918113921898"]
+global.owner = ["91917560920774"]
 global.APIs = { // API Prefix
 //======= name: 'https://website' ========//
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -44,21 +44,21 @@ global.APIKeys = { // APIKey Here
  
 global.ucpn = ''
 global.linkgc = 'https://chat.whatsapp.com/HZ4c5yrsd0g8OfELZGySFZ'
-global.linkig = 'https://www.instagram.com/neer_j_  '
-global.linkyt = 'https://www.youtube.com/channel/UCLegt7MKqNBxJjIkE_QNPdA'
-global.linkfb = 'https://fb.watch/aYv0jAffAO'
-global.git = 'https://github.com/Neeraj-x0'
-global.web1 = 'https://neeraj-x0.github.io/'
-global.url = 'https://chat.whatsapp.com/HZ4c5yrsd0g8OfELZGySFZ'
+global.linkig = 'https://www.instagram.com/khadh3r '
+global.linkyt = 'https://www.instagram.com/khadh3r'
+global.linkfb = 'https://www.instagram.com/khadh3r'
+global.git = 'https://github.com'
+global.web1 = 'https://www.instagram.com/khadh3r'
+global.url = 'https://chat.whatsapp.com/FhPPp43dYlNLi499ZJuq5X'
 
 //HEROKU  VARS
-global.thumburl = process.env.IMAGE || 'https://i.pinimg.com/474x/de/bd/b2/debdb24645169bf95eecd49f3144315f.jpg'
-global.packname = process.env.PACKNAME ||'ᴍɪʟʟɪᴇ-ᴍᴅ'
-global.author = process.env.AUTHOR ||'ɴᴇᴇʀᴀᴊ-x0'
+global.thumburl = process.env.IMAGE || 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fzombie-cartoon_61878-268.jpg%3Fw%3D2000&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fzombie%2F3&docid=L9BoKn95KKcRJM&tbnid=ktwkvuiYSg8V9M&vet=1&source=sh%2Fx%2Fim'
+global.packname = process.env.PACKNAME ||'𝚉𝙾𝙼𝙱𝙸𝙴 bot'
+global.author = process.env.AUTHOR ||'𝐊𝐇𝐀𝐃𝐇𝐄𝐑'
 global.name = 'Millie MULTI-DEVICE'
 global.session = process.env.SESSION_ID|| ''
-global.wm = process.env.WATERMARK|| 'ᴍɪʟʟɪᴇ-ᴍᴅ'
-global.owner_name = process.env.OWNER_NAME || 'Neeraj-x0'
+global.wm = process.env.WATERMARK|| 'ＫＨＡＤＨＥＲ'
+global.owner_name = process.env.OWNER_NAME || '𝐊𝐇𝐀𝐃𝐇𝐄𝐑'
 global.logsmsg = convertToBool(process.env.LOGS)|| false
 
 function convertToBool(text, fault = 'true') {
@@ -71,7 +71,7 @@ function convertToBool(text, fault = 'true') {
 
 global.deslink = ''
 global.titlink = 'Folllow me on Instagram'
-global.bodlink = 'neer_j_'
+global.bodlink = 'khadh3r'
 global.wait = '_Please Wait_'
 global.eror = '_Something went wrong please try again later_'
 global.dtu = 'BOT HELP GROUP'
