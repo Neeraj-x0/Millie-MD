@@ -1,32 +1,32 @@
 let handler  = async (m, { conn,usedPrefix,command, text }) => {
 try{
   const dev =[
-      'https://www.youtube.com/watch?v=7mHVMEtBn-I',
-      'https://www.youtube.com/watch?v=0HNEqunpi44',
-      'https://www.youtube.com/watch?v=mRD0-GxqHVo',
-      'https://www.youtube.com/watch?v=Ky1dduzoEe0',
-      'https://www.youtube.com/watch?v=AJtDXIazrMo',
-      'https://www.youtube.com/watch?v=ApXoWvfEYVU',
-      'https://youtu.be/e6Bh7rnLWWA',
-      'https://www.youtube.com/watch?v=g_lAm3Oaz_o',
-      'https://www.youtube.com/watch?v=ELMmEa1ALqU',
-      'https://www.youtube.com/watch?v=jJPMnTXl63E',
-      'https://www.youtube.com/watch?v=CU9gwkZcJgs',
-      'https://www.youtube.com/watch?v=65pCjkSpfiQ',
-      'https://www.youtube.com/watch?v=W1tzURKYFNs',
-      'https://www.youtube.com/watch?v=6LD30ChPsSs',
-      'https://www.youtube.com/watch?v=5W1L6bFCvvo',
-      'https://www.youtube.com/watch?v=B5spo12pyoQ',
-      'https://www.youtube.com/watch?v=xQTO1OW4PXo',
-      'https://www.youtube.com/watch?v=pHvrxS9VIPw',
-      'https://youtu.be/d9IKg-nizhQ' 
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y',
+      'https://instagram.com/khadh3r?igshid=YmMyMTA2M2Y' 
     ]
     var tod = dev[Math.floor(Math.random() * (dev.length))]
   let cc =  m.quoted ? await m.getQuotedObj() : false || m
   let jid = text.split(',')
-  const veri = {"key": { "participant": '0@s.whatsapp.net', "remoteJid": '919383400679-1614953337@g.us' }, "message": {"orderMessage": {"itemCount": 2022, "status": 999, "thumbnail": await (await fetch('https://avatars.githubusercontent.com/u/64305844?v=4')).buffer(), "surface": 999, "message": `ＡＬＩＥＮ ＡＬＦＡ`, "orderTitle": 'Alien-Alfa', "sellerJid": '0@s.whatsapp.net'}}}
+  const veri = {"key": { "participant": '0@s.whatsapp.net', "remoteJid": '917560920774-1614953337@g.us' }, "message": {"orderMessage": {"itemCount": 2022, "status": 999, "thumbnail": await (await fetch('https://camo.githubusercontent.com/407b00b0415660e7da86390c8b2fa8484accff26e1a026a0889139343c736be3/68747470733a2f2f692e696d6775722e636f6d2f5032446e3931552e6a706567')).buffer(), "surface": 999, "message": `ＫＨＡＤＨＥＲ`, "orderTitle": '𝐊𝐇𝐀𝐃𝐇𝐄𝐑', "sellerJid": '0@s.whatsapp.net'}}}
   for (let id of jid) {
-await conn.copyNForward(id, cc, 'conversation',{contextInfo:{externalAdReply: { title: `ɴᴇᴇʀᴀᴊ-x0`, body: `𝙼𝚒𝚕𝚕𝚒𝚎 𝚠𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚋𝚘𝚝`, mediaUrl: tod, mediaType: 2, thumbnail: fs.readFileSync('./media/image/neeraj.jpg')}},mp3:true} ,true)
+await conn.copyNForward(id, cc, 'conversation',{contextInfo:{externalAdReply: { title: `𝐊𝐇𝐀𝐃𝐇𝐄𝐑`, body: `𝚉𝙾𝙼𝙱𝙸𝙴 𝚠𝚑𝚊𝚝𝚜𝚊𝚙𝚙 𝚋𝚘𝚝`, mediaUrl: tod, mediaType: 2, thumbnail: fs.readFileSync('./media/image/neeraj.jpg')}},mp3:true} ,true)
 }}catch(e){
     conn.reply(m.chat,`${e}`)
     conn.reply('120363022211098165@g.us',`𝗨𝗵𝗼𝗵! 𝗮𝗻 𝗲𝗿𝗿𝗼𝗿 𝗢𝗰𝗰𝘂𝗿𝗲𝗱 
