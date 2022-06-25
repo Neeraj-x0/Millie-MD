@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
     res = await tts(text)
   } finally {
   if(res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true) 
-   else return conn.reply(m.chat,`Need Text to Speak \n \nExample: *${usedPrefix}${command} ɴᴇᴇʀᴀᴊ-x0*`)
+   else return conn.reply(m.chat,`Need Text to Speak \n \nExample: *${usedPrefix}${command} HELLO KHADHER*`)
   }
 }catch(e){
   conn.reply(m.chat,`${e}`)
