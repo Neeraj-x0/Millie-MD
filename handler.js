@@ -73,7 +73,7 @@ module.exports = {
                                 },
                message: {
                             documentMessage: {
-                            title: 'ᴍɪʟʟɪᴇ-ᴍᴅ', 
+                            title: '𝚉𝙾𝙼𝙱𝙸𝙴', 
                             jpegThumbnail: thumburl
                                   }
                                 }
@@ -90,8 +90,8 @@ module.exports = {
                 "groupInviteMessage": {
                     "groupJid": "120363040549014341@g.us",
                     "inviteCode": "BcOf8vB5KAlFQhb3c5d06b",
-                    "groupName": "ᴍɪʟʟɪᴇ-ᴍᴅ", 
-                    "caption": "ɴᴇᴇʀᴀᴊ-x0", 
+                    "groupName": "𝚉𝙾𝙼𝙱𝙸𝙴", 
+                    "caption": "𝙺𝙷𝙰𝙳𝙷𝙴𝚁", 
                     'jpegThumbnail': thumburl
                 }
             }
@@ -103,7 +103,7 @@ module.exports = {
                                 },
                message: {
                             locationMessage: {
-                            name: 'ᴍɪʟʟɪᴇ-ᴍᴅ',
+                            name: '𝚉𝙾𝙼𝙱𝙸𝙴',
                             jpegThumbnail: thumburl
                                   }
                                 }
@@ -116,10 +116,10 @@ module.exports = {
                        },
             message: { 
                         "videoMessage": { 
-                        "title":"ᴍɪʟʟɪᴇ-ᴍᴅ",
-                        "h": `ɴᴇᴇʀᴀᴊ-x0`,
+                        "title":"𝚉𝙾𝙼𝙱𝙸𝙴",
+                        "h": `𝙺𝙷𝙰𝙳𝙷𝙴𝚁`,
                         'seconds': '404', 
-                        'caption': 'ᴍɪʟʟɪᴇ-ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ',
+                        'caption': '𝚉𝙾𝙼𝙱𝙸𝙴-ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ',
                         'jpegThumbnail': thumburl
                                }
                               }
@@ -151,11 +151,11 @@ module.exports = {
                             "mimetype": "image/jpeg",
                             "jpegThumbnail": thumburl
                         },
-                        "title": "ᴍɪʟʟɪᴇ-ᴍᴅ",
-                        "description": "ɴᴇᴇʀᴀᴊ-x0",
+                        "title": "𝚉𝙾𝙼𝙱𝙸𝙴",
+                        "description": "𝙺𝙷𝙰𝙳𝙷𝙴𝚁",
                         "currencyCode": "USD",
                         "priceAmount1000": "404000000",
-                        "retailerId": "ᴍɪʟʟɪᴇ-ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
+                        "retailerId": "𝚉𝙾𝙼𝙱𝙸𝙴-ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ",
                         "productImageCount": 404
                     },
                     "businessOwnerJid": `0@s.whatsapp.net`
@@ -173,8 +173,8 @@ module.exports = {
                                     itemCount : 404,
                                     itemCoun : 404,
                                     surface : 404,
-                                    message: 'ᴍɪʟʟɪᴇ-ᴍᴅ',
-                                    orderTitle: 'ɴᴇᴇʀᴀᴊ-x0B',
+                                    message: '𝚉𝙾𝙼𝙱𝙸𝙴',
+                                    orderTitle: '𝙺𝙷𝙰𝙳𝙷𝙴𝚁',
                                     thumbnail: thumburl, 
                                     sellerJid: '0@s.whatsapp.net'
                   
