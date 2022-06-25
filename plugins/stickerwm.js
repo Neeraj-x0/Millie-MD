@@ -1,6 +1,6 @@
 let { webp2png } = require('../lib/webp2mp4')
 let handler = async (m, { conn, usedPrefix, command, text }) => {
-   try{ if(!text) return conn.reply(m.chat, `Enter Packname & Stickername \nExample: *${usedPrefix}${command} ɴᴇᴇʀᴀᴊ-x0,ᴍɪʟʟɪᴇ-ᴍᴅ*`, m)
+   try{ if(!text) return conn.reply(m.chat, `Enter Packname & Stickername \nExample: *${usedPrefix}${command} 𝐊𝐇𝐀𝐃𝐇𝐄𝐑,111*`, m)
     try {
     var [p, a] = text.split `,`
     var q = m.quoted ? m.quoted : m
