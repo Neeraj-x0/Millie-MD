@@ -21,8 +21,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         await delay(500)
     }
     conn.reply(m.chat,'_*Completed*_')
-        } catch {
-            conn.reply(m.chat,eror)
+        } catch (err){
+            conn.reply(m.chat,err)
             }
         }catch(e){
             conn.reply(m.chat,`${e}`)
