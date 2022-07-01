@@ -17,7 +17,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         let jisin = await gasIn.json()
         let stiker = await sticker(false, "https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/" + jisin.result.file_path)
         let sel = await webp2png(stiker)
-        await conn.sendStimg(m.chat, sel, null, { packname: global.packname, author: global.author})
+        conn.sendStimg(m.chat, sel, null, { packname: global.packname, author: global.author})
         await delay(500)
     }
     conn.reply(m.chat,'_*Completed*_')
