@@ -24,7 +24,7 @@
   
 ### SCAN QR
 
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://bit.ly/Millie-QR)
+[Click Here](https://millie-qr.herokuapp.com/)
 
 ### DEPLOY
 
