@@ -2,7 +2,6 @@
     "name": "millie-md",
     "version": "0.0.1",
     "description": "WhatsApp Bot Multi-Device",
-    "depecrated": false,
     "main": "index.js",
     "directories": {
         "lib": "lib",
@@ -10,9 +9,7 @@
         "plugins": "plugins"
     },
     "scripts": {
-        "start": "supervisor -s index.js",
-        "test": "node test.js",
-        "test2": "nodemon index.js"
+        "start": "supervisor -s index.js"
     },
     "keywords": [
         "termux-whatsapp-bot",
