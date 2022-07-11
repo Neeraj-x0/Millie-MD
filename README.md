@@ -5,22 +5,12 @@
   <img border-radius: 15px src="https://i.imgur.com/Pf1Wynm.png" width="200" height="200"/>
 
 
-<div align="center">
+<div align="left">
 
 ### There is still an issue with changing owner Number So please change owner number from [here](https://github.com/Neeraj-x0/Millie-MD/blob/main/config.js#L22)
   
 # DEPLOY
 
-## Deploying on Railway 
-
-#### Please do Follow The Order and note that your github account must be 6 Months Older in order to deploy this on railway
-  
-   
-   [![Deploy on Railway](https://railway.app/button.svg)](https://neeraj-x0.github.io/Millie-MD/)
-
-<br>
-  
-## DEPLOYING ON HEROKU
   
 ### SCAN QR
 
