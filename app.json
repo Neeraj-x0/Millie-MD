@@ -1,0 +1,65 @@
+{
+	"name": "Millie-MD",
+	"description": " Whatsapp bot.",
+	"keywords": [
+		"whatsapp",
+		"bot"
+	],
+	"repository": "https://github.com/Neeraj-x0/Millie-MD",
+	"stack": "container",
+	"env": {
+		"THUMBNAIL_IMAGE": {
+			"description": "Default Image",
+			"required": false,
+			"value": "false"
+		},
+		"THUMBNAIL_VIDEO": {
+			"description": "Default Video",
+			"required": false,
+			"value": "false"
+		},
+		"LOG_MSG": {
+			"description": "Show whatsapp msgs in log",
+			"required": false,
+			"value": "false"
+		},
+		"OWNER_NAME": {
+			"description": "Owner Name",
+			"required": true,
+			"value": ""
+		},
+		"TIME_ZONE": {
+			"description": "Your Time zone , Change if you know what you are doing",
+			"required": false,
+			"value": "Asia/Kolkata"
+		},
+		"SUDO": {
+			"description": "sudo numbers with country code seperate with , for multiple numbers",
+			"required": true,
+			"value": ""
+		},
+		"PREFIX": {
+			"description": "prefix, check for more",
+			"required": true,
+			"value": "."
+		},
+		"BOT_NAME": {
+			"description": "Bot name",
+			"required": false,
+			"value": "."
+		},
+		"SESSION_ID": {
+			"description": "session id",
+			"required": true,
+			"value": ""
+		},
+		"HEROKU_APP_NAME": {
+			"description": "Heroku app name, same as above entered",
+			"required": true
+		},
+		"HEROKU_API_KEY": {
+			"description": "Heroku account api key, https://dashboard.heroku.com/account",
+			"required": true
+		}
+	}
+}
