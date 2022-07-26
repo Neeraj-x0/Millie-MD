@@ -9,14 +9,14 @@
 	"stack": "container",
 	"env": {
 		"THUMBNAIL_IMAGE": {
-			"description": "Default Image",
+			"description": "Default Image url",
 			"required": false,
-			"value": "false"
+			"value": ""
 		},
 		"THUMBNAIL_VIDEO": {
-			"description": "Default Video",
+			"description": "Default Video url",
 			"required": false,
-			"value": "false"
+			"value": ""
 		},
 		"LOG_MSG": {
 			"description": "Show whatsapp msgs in log",
