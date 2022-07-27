@@ -8,6 +8,7 @@ module.exports = {
   name: "update",
   category: "owner",
   desc: "Check for updates",
+  isOwner:true,
   async mbb({ msg, conn }, { q, prefix }) {
     await git.fetch();
     var commits = await git.log([config.BRANCH+ "..origin/" + config.BRANCH]);
@@ -46,7 +47,7 @@ module.exports = {
         text: tiny("You have the latest version installed"),
       });
     } else {
-      var availupdate = "*ᴜᴘᴅᴀᴛᴇs ᴀᴠᴀɪʟᴀʙʟᴇ* \n\n" + "```";
+      var availupdate = "*ᴜᴘᴅᴀᴛᴇs ᴀᴠᴀɪʟᴀʙʟᴇ* \n\n";
       commits["all"].map((commit, num) => {
         availupdate += num + 1 + " ●  " + tiny(commit.message) + "\n";
       });
