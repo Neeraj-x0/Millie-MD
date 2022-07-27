@@ -8,10 +8,9 @@ module.exports = {
   name: "update",
   category: "owner",
   desc: "Check for updates",
-  isQuoted: true,
   async mbb({ msg, conn }, { q, prefix }) {
     await git.fetch();
-    var commits = await git.log(["master" + "..origin/" + "master"]);
+    var commits = await git.log([config.BRANCH+ "..origin/" + config.BRANCH]);
     if (q === "now") {
       if (commits.total === 0)
         return await conn.sendMessage(m.chat, {
