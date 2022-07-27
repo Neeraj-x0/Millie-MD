@@ -9,7 +9,7 @@ module.exports = {
     isQAudio: true,
     isQVideo: true,
   },
-  async mbb({ msg, conn }) {
+  async mbb({ msg, conn },{prefix}) {
     let buff = await msg.quoted.download();
     let data = await findMusic(buff);
     if (!data.status) return msg.reply(data);
@@ -42,7 +42,7 @@ Release : ${data.release_date}`
           index: 2,
           quickReplyButton: {
             displayText: "ᴅᴏᴡɴʟᴏᴀᴅ",
-            id: `ytmp3 ${data.youtube}`,
+            id: prefix+`ytmp3 ${data.youtube}`,
           },
         },
       ]),
