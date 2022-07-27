@@ -4,7 +4,7 @@ module.exports = {
   category: "Downloader",
   desc: "Download and plays the Song instantly",
   query: "Enter song title",
-  async mbb({ msg, conn }, { args }) {
+  async mbb({ msg, conn }, { q }) {
     
     let data = (await yts(args + " song")).video[0];
     await msg.reply(`_Playing ${data.title}_`);
