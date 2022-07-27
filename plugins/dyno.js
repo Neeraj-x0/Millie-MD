@@ -6,7 +6,7 @@ module.exports = {
     isOwner : true,
 	async mbb({ msg,conn }) {
         let resp = await dyno();
-        if(resp.includes('HEROKU'))  return msg.reply(resp)
+        if(resp.startsWith('HEROKU'))  return msg.reply(resp)
         const total_quota = Math.floor(resp.account_quota);
         const quota_used = Math.floor(resp.quota_used);
         const remaining = total_quota - quota_used;
