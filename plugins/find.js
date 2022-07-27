@@ -16,18 +16,11 @@ module.exports = {
 
     let buttonMessage = {
       image: { url: data.thumb },
-      caption: tiny(
-        `
-Title : ${data.title}
-            
-Artist : ${data.artists}
-            
-Album : ${data.album}
-            
-Genre : ${data.genres}
-            
-Release : ${data.release_date}
-                        `
+      caption: tiny(`Title : ${data.title}            
+Artist : ${data.artists}           
+Album : ${data.album}           
+Genre : ${data.genres}           
+Release : ${data.release_date}`
       ),
       footer: config.bot_name,
       templateButtons: (templateButtons = [
