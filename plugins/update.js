@@ -13,11 +13,11 @@ module.exports = {
     var commits = await git.log([config.BRANCH+ "..origin/" + config.BRANCH]);
     if (q === "now") {
       if (commits.total === 0)
-        return await conn.sendMessage(m.chat, {
+        return await conn.sendMessage(msg.from, {
           text: "```You have the latest version installed```",
         });
       var app = await heroku.get("/apps/" + config.HEROKU_APP_NAME);
-      await conn.sendMessage(m.chat, { text: "*ᴜᴘᴅᴀᴛɪɴɢ...*" });
+      await conn.sendMessage(msg.from, { text: "*ᴜᴘᴅᴀᴛɪɴɢ...*" });
       git.fetch("upstream", config.BRANCH);
       git.reset("hard", ["FETCH_HEAD"]);
       var git_url = app.git_url.replace(
@@ -33,16 +33,16 @@ module.exports = {
 
         await git.push("heroku", config.BRANCH);
 
-        await conn.sendMessage(m.chat, { text: "*Updated...*" });
+        await conn.sendMessage(msg.from, { text: "*Updated...*" });
 
-        await conn.sendMessage(m.chat, { text: "Restarting..." });
+        await conn.sendMessage(msg.from, { text: "Restarting..." });
       } catch (e) {
         m.reply(e);
       }
     }
 
     if (commits.total === 0) {
-      await conn.sendMessage(m.chat, {
+      await conn.sendMessage(msg.from, {
         text: "```You have the latest version installed```",
       });
     } else {
