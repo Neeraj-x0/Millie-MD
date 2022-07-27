@@ -37,7 +37,7 @@ module.exports = {
 
         await conn.sendMessage(msg.from, { text: "Restarting..." });
       } catch (e) {
-        m.reply(e);
+        msg.reply(e);
       }
     }
 
