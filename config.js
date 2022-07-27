@@ -11,7 +11,7 @@ module.exports = {
   Session_Id: process.env.SESSION_ID || "",
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
-  BRANCH: "master",
+  BRANCH: "main",
 };
 function ToBool(text, fault = "true") {
   return text === fault ? true : false;
