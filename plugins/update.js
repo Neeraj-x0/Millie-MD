@@ -14,7 +14,7 @@ module.exports = {
     if (q === "now") {
       if (commits.total === 0)
         return await conn.sendMessage(msg.from, {
-          text: "```You have the latest version installed```",
+          text: tiny("You have the latest version installed"),
         });
       var app = await heroku.get("/apps/" + config.HEROKU_APP_NAME);
       await conn.sendMessage(msg.from, { text: "*ᴜᴘᴅᴀᴛɪɴɢ...*" });
