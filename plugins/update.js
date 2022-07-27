@@ -43,7 +43,7 @@ module.exports = {
 
     if (commits.total === 0) {
       await conn.sendMessage(msg.from, {
-        text: "```You have the latest version installed```",
+        text: tiny("You have the latest version installed"),
       });
     } else {
       var availupdate = "*ᴜᴘᴅᴀᴛᴇs ᴀᴠᴀɪʟᴀʙʟᴇ* \n\n" + "```";
