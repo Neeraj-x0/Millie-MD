@@ -50,7 +50,7 @@ module.exports = {
       commits["all"].map((commit, num) => {
         availupdate += num + 1 + " ●  " + tiny(commit.message) + "\n";
       });
-      await sendMessage(msg.from, {
+      await conn.sendMessage(msg.from, {
         text: availupdate,
         footer: tiny("click here to update"),
         buttons: [
