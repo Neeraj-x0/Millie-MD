@@ -1,5 +1,5 @@
 module.exports = {
-  owner: process.env.SUDO || "",
+  owner: process.env.SUDO || "918113921898,0",
   thumbvideo: process.env.THUMBNAIL_VIDEO || "https://i.imgur.com/2kAp0f0.mp4",
   thumbImg: process.env.THUMBNAIL_IMAGE || "https://i.imgur.com/DfFk2Wx.jpeg",
   ownername: process.env.OWNER_NAME || "Neeraj-x0",
