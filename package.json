@@ -9,7 +9,7 @@
     "format": "prettier --write '**/*.{md,js,json}'"
   },
   "dependencies": {
-    "millie-md":"1.0.5",
+    "millie-md":"1.0.6",
     "@neeraj-x0/textpro":"1.0.3"
 
   },
