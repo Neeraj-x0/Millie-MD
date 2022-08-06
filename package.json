@@ -9,7 +9,7 @@
     "format": "prettier --write '**/*.{md,js,json}'"
   },
   "dependencies": {
-    "@adiwajshing/baileys": "git+https://github.com/adiwajshing/Baileys.git",
+    "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "millie-md":"1.0.6",
     "@neeraj-x0/textpro":"1.0.3"
 
