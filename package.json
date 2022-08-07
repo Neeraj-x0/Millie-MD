@@ -10,7 +10,8 @@
   "dependencies": {
     "millie-md":"1.0.6",
     "@neeraj-x0/textpro":"1.0.3",
-    "@adiwajshing/baileys":"git+https://github.com/Neeraj-x0/Baileys.git"
+    "@adiwajshing/baileys":"git+https://github.com/Neeraj-x0/Baileys.git",
+    "node-gtts": "^2.0.2"
 
   },
   "description": "Multi-device Whatsapp Bot using Javascript",
