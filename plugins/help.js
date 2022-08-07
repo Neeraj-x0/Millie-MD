@@ -1,5 +1,6 @@
 const { getRam } = require("../lib");
 let config = require('../config')
+let {version} = require('../package.json')
 const { convertTime } = require("../lib");
 const { readdirSync } = require("fs");
 const plugin = readdirSync("./plugins").length;
@@ -10,7 +11,7 @@ let owner = config.owner.split(',')
 module.exports = {
   name: "help",
   alias: ["h", "cmd", "menu"],
-  category: "umum",
+  category: "ignore",
   async mbb({ msg, conn }, { q, map, prefix }) {
     if (q) {
       const data = [];
@@ -63,7 +64,7 @@ module.exports = {
 ┃ │ Time : ${date.toLocaleTimeString()}
 ┃ │ Day : ${date.toLocaleString("en", { weekday: "long" })}
 ┃ │ Date : ${date.toLocaleDateString("hi")}
-┃ │ Version : 2.0.5
+┃ │ Version : ${version}
 ┃ │ Ram : ${getRam()}
 ┃ │ Plugins : ${plugin}
 ┃ │ Uptime : ${convertTime(map.uptime.getTime())}
