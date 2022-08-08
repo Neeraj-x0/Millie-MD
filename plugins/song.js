@@ -16,21 +16,30 @@ module.exports = {
       let data = (await yts(q)).video[0];
       let { authorName, title, url, thumbnail, duration, view, publishedTime } =
         data;
-      await conn.sendMessage(msg.from, {
+      const buttons = [
+        {
+          buttonId: prefix + "yta " + url,
+          buttonText: { displayText: "🎧 ᴀᴜᴅɪᴏ 🎧" },
+        },
+        {
+          buttonId: prefix + "ytv " + url,
+          buttonText: { displayText: "📽 ᴠɪᴅᴇᴏ 📽" },
+        },
+      ];
+
+      const buttonMessage = {
         image: { url: thumbnail },
         caption: tiny(`● *Title:* ${title}
-● *Duration:* ${duration}
-● *Viewers:* ${view}
-● *Uploaded:* ${publishedTime}
-● *Channel:* ${authorName}
-`),
-
+  ● *Duration:* ${duration}
+  ● *Viewers:* ${view}
+  ● *Uploaded:* ${publishedTime}
+  ● *Channel:* ${authorName}
+  `),
         footer: config.bot_name,
-        buttons: [
-  {buttonId: prefix + "yta " + url, buttonText: {displayText: '🎧 ᴀᴜᴅɪᴏ 🎧'}, type: 1},
-  {buttonId: prefix + "ytv " + url, buttonText: {displayText: "📽 ᴠɪᴅᴇᴏ 📽"}, type: 1}
-],
-      });
+        buttons: buttons,
+        headerType: 1,
+      };
+    
     }
   },
 };
