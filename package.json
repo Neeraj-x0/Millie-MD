@@ -8,7 +8,7 @@
     "start": "node ."
   },
   "dependencies": {
-    "millie-md":"1.0.7",
+    "millie-md":"1.0.8",
     "@neeraj-x0/textpro":"1.0.3",
     "@adiwajshing/baileys": "git+https://github.com/adiwajshing/Baileys.git",
     "translatte": "^3.0.1"
