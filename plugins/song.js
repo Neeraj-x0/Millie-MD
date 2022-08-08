@@ -26,21 +26,10 @@ module.exports = {
 `),
 
         footer: config.bot_name,
-        templateButtons: [
-          { urlButton: { displayText: "ᴘʟᴀʏ ᴏɴ ʏᴏᴜᴛᴜʙᴇ", url: url } },
-          {
-            quickReplyButton: {
-              displayText: "🎧 ᴀᴜᴅɪᴏ 🎧",
-              id: prefix + "yta " + url,
-            },
-          },
-          {
-            quickReplyButton: {
-              displayText: "📽 ᴠɪᴅᴇᴏ 📽",
-              id: prefix + "ytv " + url,
-            },
-          },
-        ],
+        buttons: [
+  {buttonId: prefix + "yta " + url, buttonText: {displayText: '🎧 ᴀᴜᴅɪᴏ 🎧'}, type: 1},
+  {buttonId: prefix + "ytv " + url, buttonText: {displayText: "📽 ᴠɪᴅᴇᴏ 📽"}, type: 1}
+],
       });
     }
   },
