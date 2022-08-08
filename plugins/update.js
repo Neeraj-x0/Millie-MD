@@ -52,7 +52,17 @@ module.exports = {
         availupdate += num + 1 + " ●  " + tiny(commit.message) + "\n";
       });
       return await conn.sendMessage(msg.from, {
-        text: availupdate +'\n\n send update now to update'});
+        text: availupdate,
+        footer: tiny("click here to update"),
+        buttons: [
+          {
+            buttonId: `${prefix}update now`,
+            buttonText: { displayText: tiny("update now") },
+            type: 1,
+          },
+        ],
+        headerType: 1,
+      });
     }
   },
 };
