@@ -10,7 +10,8 @@
   "dependencies": {
     "millie-md":"1.0.8",
     "@neeraj-x0/textpro":"1.0.3",
-    "@adiwajshing/baileys": "git+https://github.com/adiwajshing/Baileys.git",
+    "@adiwajshing/baileys": "github:adiwajshing/Baileys",
+    "@adiwajshing/keyed-db": "^0.2.4",
     "translatte": "^3.0.1"
 
   },
