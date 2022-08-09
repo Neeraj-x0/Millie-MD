@@ -1,21 +1,22 @@
 {
   "name": "millie-multidevice",
-  "version": "2.0.2",
+  "version": "2.0.1",
   "main": "index.js",
   "license": "MIT",
   "author": "Neeraj-x0",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "format": "prettier --write '**/*.{md,js,json}'"
   },
   "dependencies": {
-    "millie-md":"1.0.8",
-    "@neeraj-x0/textpro":"1.0.3",
     "@adiwajshing/baileys": "github:adiwajshing/Baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "translatte": "^3.0.1"
-
+    "@neeraj-x0/textpro": "1.0.3",
+    "millie-md": "1.0.8",
+    "sequelize": "^6.21.3",
+    "translatte": "^3.0.1",
   },
-  "description": "Multi-device Whatsapp Bot using Javascript",
+  "description": " multi-device Whatsapp  Bot using Javascript",
   "directories": {
     "lib": "lib",
     "database": "database",
