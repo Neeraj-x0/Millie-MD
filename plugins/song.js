@@ -12,7 +12,7 @@ module.exports = {
         { audio: await songMeta(q), mimetype: "audio/mpeg" },
         { quoted: msg }
       );
-    } else {
+    } else {  
       let data = (await yts(q)).video[0];
       let { authorName, title, url, thumbnail, duration, view, publishedTime } =
         data;
@@ -37,9 +37,10 @@ module.exports = {
   `),
         footer: config.bot_name,
         buttons: buttons,
-        headerType: 1,
+        headerType: 4,
       };
+      await conn.sendMessage(msg.from, buttonMessage)
+    }
     
     }
-  },
-};
+  }
