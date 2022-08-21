@@ -9,12 +9,21 @@
     "format": "prettier --write '**/*.{md,js,json}'"
   },
   "dependencies": {
-    "@adiwajshing/baileys": "github:adiwajshing/Baileys",
+    "@adiwajshing/baileys": "github:adiwajshing/baileys",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@neeraj-x0/textpro": "1.0.3",
-    "millie-md": "1.0.8",
+    "g-i-s": "^2.1.6",
+    "gtts": "^0.2.1",
+    "instagram-save": "^1.3.2",
+    "millie-md": "1.0.5",
+    "node-gtts": "^2.0.2",
+    "node-html-parser": "^5.3.3",
+    "node-wit": "^6.4.0",
+    "pg": "^8.7.3",
     "sequelize": "^6.21.3",
-    "translatte": "^3.0.1"
+    "sqlite3": "^5.0.11",
+    "translatte": "^3.0.1",
+    "unsplash-js": "^7.0.15"
   },
   "description": " multi-device Whatsapp  Bot using Javascript",
   "directories": {
