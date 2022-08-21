@@ -37,7 +37,7 @@ module.exports = {
   `),
         footer: config.bot_name,
         buttons: buttons,
-        headerType: 4,
+        headerType: 1,
       };
       await conn.sendMessage(msg.from, buttonMessage)
     }
